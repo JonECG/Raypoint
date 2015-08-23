@@ -1,0 +1,10 @@
+*.log
+*.unsuccessfulbuild
+*.lastbuildstate
+*.tlog
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.psess
+*.vspx
