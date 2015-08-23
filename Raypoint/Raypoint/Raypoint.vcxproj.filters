@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{b8660220-c4fa-4a4c-84d4-7b95255b351d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Operator.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="EvaluationNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="nodetemplate.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptParser.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Structure.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="StructureNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Value.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptArtist.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionNode.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectEditorWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeEditWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VariablePacket.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="StructureObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectListWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueTableWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEditorWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InSceneStructureWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollapsableWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationEditorWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationGridEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IgnoreChildWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JankConnect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CatmullRom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewRayMarchCL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewRayMarchWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSettingsWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InSceneJointWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="EvaluationNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptParser.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Structure.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="StructureNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Value.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptArtist.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionNode.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectEditorWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeEditWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VariablePacket.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectListWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueTableWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StructureObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEditorWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InSceneStructureWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollapsableWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationEditorWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationGridEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JankConnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JankConnect_moc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CatmullRom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewRayMarchCL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewRayMarchWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSettingsWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InSceneJointWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ray_march.cl" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <TempDirectory>Temp\</TempDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\</OutDir>
+    <IntDir>$(SolutionDir)$(TempDirectory)$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)RunDlls\*.dll" xcopy /Y /d "$(SolutionDir)RunDlls\*.dll" "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\"
+
+IF NOT EXIST "$(SolutionDir)$(TempDirectory)$(Configuration)\Lib\" mkdir "$(SolutionDir)$(TempDirectory)$(Configuration)\Lib\"
+IF EXIST "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.lib" move /Y /d "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.lib" "$(SolutionDir)$(TempDirectory)$(Configuration)\Lib\"
+
+IF EXIST "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.exe" xcopy /Y /d "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.exe" "$(SolutionDir)$(TempDirectory)$(Configuration)\Distributable\"
+IF EXIST "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.dll" xcopy /Y /d "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\*.dll" "$(SolutionDir)$(TempDirectory)$(Configuration)\Distributable\"
+
+IF EXIST "$(SolutionDir)Assets\*" xcopy /Y /s /i /d "$(SolutionDir)Assets\*" "$(SolutionDir)$(TempDirectory)$(Configuration)\Bin\Assets"
+IF EXIST "$(SolutionDir)Assets\*" xcopy /Y /s /i /d "$(SolutionDir)Assets\*" "$(SolutionDir)$(TempDirectory)$(Configuration)\Distributable\Assets"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="TempDirectory">
+      <Value>$(TempDirectory)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98A90C7B-93E4-4C6E-9C17-0BB1D2296C33}</ProjectGuid>
+    <RootNamespace>Raypoint</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\CommonProperties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\CommonProperties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ext\glm\;D:\Program Files (x86)\Intel\OpenCL SDK\4.4\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include;$(SolutionDir)..\ext\opencv\include\;$(SolutionDir)..\ext\Qt\include\;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUGGY;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\opencv\lib\;$(SolutionDir)..\ext\Qt\lib\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\lib\Win32;D:\Program Files (x86)\Intel\OpenCL SDK\4.4\lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core2410d.lib;opencv_imgproc2410d.lib;opencv_highgui2410d.lib;opencv_ml2410d.lib;opencv_video2410d.lib;opencv_features2d2410d.lib;opencv_calib3d2410d.lib;opencv_objdetect2410d.lib;opencv_contrib2410d.lib;opencv_legacy2410d.lib;opencv_flann2410d.lib;OpenCL.lib;Qt5Cored.lib;Qt5Widgetsd.lib;Qt5Guid.lib;Qt5OpenGLd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>
+      </SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ext\glm\;D:\Program Files (x86)\Intel\OpenCL SDK\4.4\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\include;$(SolutionDir)..\ext\opencv\include\;$(SolutionDir)..\ext\Qt\include\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\opencv\lib\;$(SolutionDir)..\ext\Qt\lib\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.0\lib\Win32;D:\Program Files (x86)\Intel\OpenCL SDK\4.4\lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core2410d.lib;opencv_imgproc2410d.lib;opencv_highgui2410d.lib;opencv_ml2410d.lib;opencv_video2410d.lib;opencv_features2d2410d.lib;opencv_calib3d2410d.lib;opencv_objdetect2410d.lib;opencv_contrib2410d.lib;opencv_legacy2410d.lib;opencv_flann2410d.lib;OpenCL.lib;Qt5Cored.lib;Qt5Widgetsd.lib;Qt5Guid.lib;Qt5OpenGLd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationEditorWidget.h" />
+    <ClInclude Include="AnimationGridEditor.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CatmullRom.h" />
+    <ClInclude Include="CodeEditWidget.h" />
+    <ClInclude Include="CollapsableWidget.h" />
+    <ClInclude Include="ConsoleWidget.h" />
+    <ClInclude Include="EmptyNode.h" />
+    <ClInclude Include="EvaluationNode.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="FunctionNode.h" />
+    <ClInclude Include="IgnoreChildWidget.h" />
+    <ClInclude Include="InSceneJointWidget.h" />
+    <ClInclude Include="InSceneStructureWidget.h" />
+    <ClInclude Include="JankConnect.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="NewRayMarchCL.h" />
+    <ClInclude Include="NewRayMarchWidget.h" />
+    <ClInclude Include="nodetemplate.h" />
+    <ClInclude Include="ObjectListWidget.h" />
+    <ClInclude Include="RenderSettingsWidget.h" />
+    <ClInclude Include="SceneEditorWidget.h" />
+    <ClInclude Include="SceneModel.h" />
+    <ClInclude Include="StructureObject.h" />
+    <ClInclude Include="ObjectEditorWidget.h" />
+    <ClInclude Include="Operator.h" />
+    <ClInclude Include="OperatorNode.h" />
+    <ClInclude Include="ScriptArtist.h" />
+    <ClInclude Include="ScriptNode.h" />
+    <ClInclude Include="ScriptParser.h" />
+    <ClInclude Include="Structure.h" />
+    <ClInclude Include="StructureNode.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Value.h" />
+    <ClInclude Include="ValueNode.h" />
+    <ClInclude Include="ValueTableWidget.h" />
+    <ClInclude Include="VariableNode.h" />
+    <ClInclude Include="VariablePacket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationEditorWidget.cpp" />
+    <ClCompile Include="AnimationGridEditor.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="CatmullRom.cpp" />
+    <ClCompile Include="CodeEditWidget.cpp" />
+    <ClCompile Include="CollapsableWidget.cpp" />
+    <ClCompile Include="ConsoleWidget.cpp" />
+    <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="EmptyNode.cpp" />
+    <ClCompile Include="EvaluationNode.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="FunctionNode.cpp" />
+    <ClCompile Include="InSceneJointWidget.cpp" />
+    <ClCompile Include="InSceneStructureWidget.cpp" />
+    <ClCompile Include="JankConnect.cpp" />
+    <ClCompile Include="JankConnect_moc.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="NewRayMarchCL.cpp" />
+    <ClCompile Include="NewRayMarchWidget.cpp" />
+    <ClCompile Include="ObjectEditorWidget.cpp" />
+    <ClCompile Include="ObjectListWidget.cpp" />
+    <ClCompile Include="Operator.cpp" />
+    <ClCompile Include="OperatorNode.cpp" />
+    <ClCompile Include="RenderSettingsWidget.cpp" />
+    <ClCompile Include="SceneEditorWidget.cpp" />
+    <ClCompile Include="SceneModel.cpp" />
+    <ClCompile Include="ScriptArtist.cpp" />
+    <ClCompile Include="ScriptNode.cpp" />
+    <ClCompile Include="ScriptParser.cpp" />
+    <ClCompile Include="Structure.cpp" />
+    <ClCompile Include="StructureNode.cpp" />
+    <ClCompile Include="StructureObject.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Value.cpp" />
+    <ClCompile Include="ValueNode.cpp" />
+    <ClCompile Include="ValueTableWidget.cpp" />
+    <ClCompile Include="VariableNode.cpp" />
+    <ClCompile Include="VariablePacket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ray_march.cl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
